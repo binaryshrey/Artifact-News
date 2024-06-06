@@ -2,7 +2,7 @@
 <resources>
     <style name="Theme.MainTheme" parent="Theme.SplashScreen">
         <item name="windowSplashScreenBackground">@color/black</item>
-        <item name="windowSplashScreenAnimatedIcon">@drawable/avatarsai_splash</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/artifact_splash</item>
         <item name="windowSplashScreenAnimationDuration">300</item>
         <item name="postSplashScreenTheme">@style/Theme.AvatarsAI</item>
     </style>
