@@ -1,0 +1,42 @@
+[
+  {
+    "category_id": 1,
+    "category_name": "Most Popular",
+    "names": "U.S. Politics::Tech Companies::TV & Movies::Recipes::Travel::Celebs::Restaurants"
+  },
+  {
+    "category_id": 2,
+    "category_name": "Lifestyle",
+    "names": "Travel Tips::Luxury Homes::Architecture::Interior Design::Fashion::Cars::Wine & Drinks::Home Products::Kitchen Products"
+  },
+  {
+    "category_id": 3,
+    "category_name": "Health",
+    "names": "Health::Exercise::Mental Wellness::Parenting::Covid::Relationships::Dating"
+  },
+  {
+    "category_id": 4,
+    "category_name": "Tech & Science",
+    "names": "Startups::Electric Cars::Apps::Gadgets::Nature::Climate Change::Science::Space::Gaming::AI"
+  },
+  {
+    "category_id": 5,
+    "category_name": "Business & Finance",
+    "names": "Stocks & Investing::Crypto::Personal Finance::Real Estate::Working & Career::Business::Productivity"
+  },
+  {
+    "category_id": 6,
+    "category_name": "Arts, Design & Culture",
+    "names": "Books::Art::Internet Culture::Reality TV"
+  },
+  {
+    "category_id": 7,
+    "category_name": "Sports",
+    "names": "IPL::MLS::EPL F1::Tennis::Badminton::Soccer"
+  },
+  {
+    "category_id": 8,
+    "category_name": "Global & More",
+    "names": "Intl Politics::Aviation::Education::Humor & Cartoons"
+  }
+]

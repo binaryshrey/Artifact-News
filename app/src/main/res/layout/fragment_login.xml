@@ -1,12 +1,138 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="artifactViewModel"
+            type="com.shreyanshsaurabh.artifact.viewmodel.ArtifactViewModel" />
+    </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/loginLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".ui.LoginFragment">
+        android:background="@color/black"
+        tools:context=".ui.login.LoginFragment">
+
+        <VideoView
+            android:id="@+id/videoView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/appTitleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/roboto_black"
+            android:text="ARTIFACT"
+            android:textColor="@color/white"
+            android:textSize="80sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/videoView" />
+
+
+        <TextView
+            android:id="@+id/taglineTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/libre_franklin"
+            android:text="Feed your curiosity"
+            android:textColor="@color/white"
+            android:textSize="32sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/appTitleTextView" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/googleContinueButton"
+            android:onClick="@{() -> artifactViewModel.updateLogin()}"
+            android:layout_width="0dp"
+            android:layout_height="64dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginEnd="48dp"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="#212121"
+            android:drawableLeft="@drawable/google_color"
+            android:fontFamily="@font/libre_franklin"
+            android:text="Continue with Google"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:cornerRadius="32dp"
+            app:layout_constraintBottom_toTopOf="@+id/footer"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+        <ProgressBar
+            android:id="@+id/loginProgress"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginBottom="24dp"
+            android:elevation="4dp"
+            android:indeterminateTint="@color/white"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@+id/googleContinueButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.820"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+        <LinearLayout
+            android:id="@+id/footer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="@font/libre_franklin"
+                android:text="By continuing, you agree to our "
+                android:textColor="@color/white"
+                android:textSize="11sp" />
+
+            <TextView
+                android:id="@+id/termsTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="@font/libre_franklin"
+                android:text="Terms "
+                android:textColor="#F63860"
+                android:textSize="11sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="@font/libre_franklin"
+                android:text="and "
+                android:textColor="@color/white"
+                android:textSize="11sp" />
+
+            <TextView
+                android:id="@+id/privacyPolicyTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="@font/libre_franklin"
+                android:text="Privacy Policy "
+                android:textColor="#F63860"
+                android:textSize="11sp" />
+        </LinearLayout>
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
